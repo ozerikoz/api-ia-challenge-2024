@@ -1,5 +1,4 @@
 Flask
 sentence-transformers
-torch
 pandas
 nltk
