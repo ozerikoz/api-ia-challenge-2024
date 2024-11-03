@@ -1,12 +1,10 @@
 from flask import Flask, request, jsonify
 import pandas as pd
 from sentence_transformers import SentenceTransformer
-from model import find_similar_problem
+from model import preprocess_text, find_similar_problem  # Certifique-se de que o model.py está em api/
 
 # Carregar o dataset e o modelo SBERT
-file_path = 'dataset_ia.csv'  # Certifique-se de que este arquivo esteja na mesma pasta ou ajuste o caminho
-
-df = pd.read_csv(file_path, sep=";")
+df = pd.read_csv('api/dataset_ia.csv', sep=";")  # Ajuste o caminho se necessário
 model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
 
 # Inicializar a aplicação Flask
@@ -45,5 +43,5 @@ def similarity():
 
     return jsonify(result)
 
-# Para compatibilidade com a Vercel
+# Exporta 'app' para que a Vercel possa identificá-lo
 app = app
