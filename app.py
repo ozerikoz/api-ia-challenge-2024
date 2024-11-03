@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import pandas as pd
 from sentence_transformers import SentenceTransformer
-from model import preprocess_text, find_similar_problem  # Certifique-se de que o model.py está em api/
+from modelo_ia.model import find_similar_problem  # Certifique-se de que o model.py está em api/
 
 # Carregar o dataset e o modelo SBERT
 df = pd.read_csv('dataset_ia.csv', sep=";")  # Ajuste o caminho se necessário
@@ -43,5 +43,5 @@ def similarity():
 
     return jsonify(result)
 
-# Exporta 'app' para que a Vercel possa identificá-lo
-app = app
+if __name__ == '__main__':
+    app.run(debug=True)
