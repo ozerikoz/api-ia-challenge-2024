@@ -4,7 +4,7 @@ from sentence_transformers import SentenceTransformer
 from model import find_similar_problem
 
 # Carregar o dataset e o modelo SBERT
-file_path = 'dataset_ia.csv'
+file_path = 'dataset_ia.csv'  # Certifique-se de que este arquivo esteja na mesma pasta ou ajuste o caminho
 
 df = pd.read_csv(file_path, sep=";")
 model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
@@ -41,10 +41,9 @@ def similarity():
             "similarity": round(similarity, 2)
         }
     else:
-        result = {'message': 'Nenhum problema similar encontrado.'}, 404
+        result = {'message': 'Nenhum problema similar encontrado.'}
 
     return jsonify(result)
 
-# Executar o servidor
-if __name__ == '__main__':
-    app.run(debug=True)
+# Para compatibilidade com a Vercel
+app = app
