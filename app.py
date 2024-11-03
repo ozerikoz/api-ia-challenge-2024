@@ -4,7 +4,7 @@ from sentence_transformers import SentenceTransformer
 from modelo_ia.model import find_similar_problem  # Certifique-se de que o model.py está em api/
 
 # Carregar o dataset e o modelo SBERT
-df = pd.read_csv('dataset_ia.csv', sep=";")  # Ajuste o caminho se necessário
+df = pd.read_csv('modelo_ia\dataset_ia.csv', sep=";")  # Ajuste o caminho se necessário
 model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
 
 # Inicializar a aplicação Flask
