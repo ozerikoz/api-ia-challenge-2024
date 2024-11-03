@@ -1,47 +1,54 @@
 from flask import Flask, request, jsonify
 import pandas as pd
-from sentence_transformers import SentenceTransformer
-from modelo_ia.model import find_similar_problem  # Certifique-se de que o model.py está em api/
+from modelo_ia.model import load_word2vec_model, get_average_vector, test_model_with_new_sample
 
-# Carregar o dataset e o modelo SBERT
-df = pd.read_csv('modelo_ia/dataset_ia.csv', sep=";")
-model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
-
-# Inicializar a aplicação Flask
+# Criar a aplicação Flask
 app = Flask(__name__)
 
+# Carregar o modelo Word2Vec
+model_path = 'modelo_ia/word2vec_model.pkl' 
+model = load_word2vec_model(model_path)
+
+# Carregar o DataFrame do CSV
+csv_path = 'modelo_ia/dataset.csv'  # Substitua pelo caminho do seu CSV
+df = pd.read_csv(csv_path, sep=",")
+print(df.head())
+train_problems_processed = df['Problema'].apply(lambda x: x.lower()).tolist()  # Pré-processamento simples
+train_df = df.copy()
+
+# Endpoint para receber a nova amostra
 @app.route('/similarity', methods=['POST'])
-def similarity():
-    data = request.get_json()
-    user_problem = data.get('user_problem')
-    fabricante = data.get('fabricante')
-    modelo = data.get('modelo')
-    ano = data.get('ano')
+def test():
+    data = request.json
+    new_sample = data.get('problema')
+    modelo_usuario = data.get('modelo')
+    fabricante_usuario = data.get('fabricante')
+    ano_usuario = data.get('ano')
 
-    if not user_problem:
-        return jsonify({'error': 'O campo user_problem é obrigatório.'}), 400
+    if not new_sample:
+        return jsonify({'error': 'Nova amostra não fornecida.'}), 400
 
-    # Encontrar o problema mais similar usando a função de similaridade
-    best_match_row, similarity = find_similar_problem(user_problem, df, model, fabricante=fabricante, modelo=modelo, ano=ano)
+    result = test_model_with_new_sample(new_sample, train_problems_processed, train_df, model, modelo_usuario, fabricante_usuario, ano_usuario)
 
-    if best_match_row is not None:
+    if result is not None:
         result = {
-            "fabricante": best_match_row['Fabricante'],
-            "modelo": best_match_row['Modelo'],
-            "ano": int(best_match_row['Ano']),
-            "problema": best_match_row['Problema'],
-            "causa": best_match_row['Causa'],
-            "solucao": best_match_row['Solucao'],
-            "orcamento": float(best_match_row['Orcamento']),
-            "categoria": best_match_row['Categoria do Problema'],
-            "gravidade": best_match_row['Gravidade do Problema'],
-            "tempo_reparo": best_match_row['Tempo Estimado de Reparo'],
-            "similarity": round(similarity, 2)
+            "fabricante": result['Fabricante'],
+            "modelo": result['Modelo'],
+            "ano": int(result['Ano']),
+            "problema": result['Problema'],
+            "categoria": result['Categoria do Problema'],
+            "gravidade": result['Gravidade do Problema'],
+            "causa": result['Causa'],
+            "orcamento": result['Orcamento'],
+            "similaridade": round(result['Similaridade'], 2),
+            "solucao": result['Solucao'],
+            "tempo_reparo": result['Tempo Estimado de Reparo']
         }
+        
+        return jsonify({'resultado': result}), 200  # Retorna a linha inteira do dataset
     else:
-        result = {'message': 'Nenhum problema similar encontrado.'}
+        return jsonify({'mensagem': 'Nenhum resultado encontrado.'}), 404
 
-    return jsonify(result)
-
+# Inicializar a aplicação
 if __name__ == '__main__':
     app.run(debug=True)

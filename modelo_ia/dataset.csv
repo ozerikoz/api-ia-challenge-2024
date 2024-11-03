@@ -1,0 +1,101 @@
+Fabricante,Modelo,Ano,Problema,Causa,Solucao,Orcamento,Categoria do Problema,Gravidade do Problema,Tempo Estimado de Reparo
+Ford,Focus,2019,Motor fazendo ruído metálico,Filtro de combustível entupido,Limpeza e troca do filtro,1882,Freios,Média,2.9
+Fiat,Mobi,2022,Falha no sistema de direção elétrica,Falha no sistema hidráulico,Troca da embreagem,1934,Transmissão,Baixa,3.2
+Renault,Kwid,2018,Transmissão com falhas,Correia de direção desgastada,Substituição das válvulas,1006,Motor,Média,2.6
+Renault,Duster,2022,Dificuldade para engatar marchas,Falta de gás refrigerante,Substituição da bateria,1131,Transmissão,Média,2.8
+Chevrolet,S10,2018,Dificuldade para engatar marchas,Problema na embreagem,Substituição do sensor,1373,Direção,Média,1.6
+Fiat,Argo,2018,Dificuldade para engatar marchas,Falha no sistema hidráulico,Troca do sensor de oxigênio,1227,Transmissão,Baixa,2.5
+Volkswagen,Polo,2018,Dificuldade para engatar marchas,Desgaste nas válvulas,Reprogramação do módulo de direção,1470,Direção,Baixa,3.2
+Toyota,Hilux,2020,Ar condicionado não refrigera,Falha no sistema hidráulico,Reprogramação do módulo de direção,1111,Transmissão,Alta,2.4
+Chevrolet,Onix,2023,Luz de injeção acesa,Defeito no módulo de direção,Troca do sensor de oxigênio,1324,Elétrico,Média,2.2
+Renault,Captur,2020,Ruído ao virar o volante,Defeito no módulo de direção,Substituição da bateria,441,Elétrico,Baixa,3.1
+Renault,Duster,2018,Transmissão com falhas,Falha no sistema hidráulico,Troca da correia de direção,607,Elétrico,Alta,3.0
+Ford,Fiesta,2017,Vibração ao frear,Sonda lambda com falhas,Troca do sensor de oxigênio,1941,Freios,Alta,2.1
+Ford,Ranger,2023,Motor fazendo ruído metálico,Falha no sistema hidráulico,Troca do fluido hidráulico,1271,Motor,Média,2.5
+Honda,Fit,2017,Dificuldade para engatar marchas,Defeito no módulo de direção,Troca do fluido hidráulico,1470,Direção,Alta,3.1
+Fiat,Argo,2015,Ruído ao virar o volante,Sensor de oxigênio com defeito,Substituição das válvulas,1777,Motor,Alta,3.6
+Honda,Civic,2022,Consumo elevado de combustível,Sensor de oxigênio com defeito,Reprogramação do módulo de direção,715,Motor,Baixa,3.9
+Ford,Fiesta,2016,Luz do ABS acesa,Sonda lambda com falhas,Substituição do sensor,331,Elétrico,Média,3.6
+Toyota,Hilux,2015,Veículo demora a ligar,Desgaste nos discos de freio,Reprogramação do módulo de direção,1502,Direção,Média,1.6
+Renault,Duster,2020,Veículo demora a ligar,Defeito no módulo de direção,Substituição da sonda lambda,1119,Freios,Baixa,3.8
+Chevrolet,Cruze,2020,Dificuldade para engatar marchas,Sensor ABS defeituoso,Troca do fluido hidráulico,1775,Freios,Média,1.4
+Renault,Captur,2021,Perda de potência em subidas,Sensor de oxigênio com defeito,Substituição das válvulas,1069,Motor,Baixa,2.8
+Honda,Fit,2020,Perda de potência em subidas,Sensor ABS defeituoso,Limpeza e troca do filtro,1047,Motor,Média,3.4
+Chevrolet,S10,2023,Falha no sistema de direção elétrica,Falha no sistema hidráulico,Substituição da bateria,1708,Direção,Baixa,1.5
+Ford,Ranger,2021,Motor fazendo ruído metálico,Desgaste nos discos de freio,Substituição da bateria,895,Elétrico,Baixa,1.3
+Ford,Ranger,2015,Motor fazendo ruído metálico,Falta de gás refrigerante,Recarga de gás refrigerante,1231,Freios,Baixa,3.1
+Honda,Civic,2021,Falha no sistema de direção elétrica,Falta de gás refrigerante,Substituição das válvulas,517,Direção,Alta,1.7
+Honda,Civic,2020,Luz de injeção acesa,Falha no sistema hidráulico,Troca do fluido hidráulico,1972,Freios,Alta,3.7
+Honda,Civic,2015,Motor fazendo ruído metálico,Desgaste nas válvulas,Substituição das válvulas,1601,Combustível,Baixa,1.2
+Fiat,Mobi,2023,Luz de injeção acesa,Sonda lambda com falhas,Recarga de gás refrigerante,1205,Direção,Média,4.0
+Fiat,Mobi,2019,Consumo elevado de combustível,Falha no sistema hidráulico,Recarga de gás refrigerante,424,Freios,Média,2.8
+Chevrolet,Onix,2015,Vibração ao frear,Desgaste nas válvulas,Reprogramação do módulo de direção,1147,Motor,Baixa,1.4
+Volkswagen,Jetta,2019,Motor fazendo ruído metálico,Sensor de oxigênio com defeito,Troca da correia de direção,1990,Transmissão,Alta,1.4
+Chevrolet,S10,2015,Transmissão com falhas,Falha no sistema hidráulico,Recarga de gás refrigerante,576,Freios,Alta,1.7
+Renault,Duster,2016,Dificuldade para engatar marchas,Desgaste nos discos de freio,Troca do sensor de oxigênio,882,Freios,Média,2.8
+Renault,Duster,2021,Consumo elevado de combustível,Filtro de combustível entupido,Substituição da sonda lambda,1294,Transmissão,Alta,2.1
+Volkswagen,Jetta,2022,Transmissão com falhas,Desgaste nas válvulas,Substituição da bateria,1881,Elétrico,Alta,3.5
+Volkswagen,Polo,2021,Ar condicionado não refrigera,Correia de direção desgastada,Troca da correia de direção,1058,Transmissão,Alta,2.1
+Ford,Fiesta,2023,Ruído ao virar o volante,Bateria descarregada,Reprogramação do módulo de direção,1667,Freios,Média,2.5
+Toyota,Hilux,2021,Luz do ABS acesa,Sensor ABS defeituoso,Substituição das válvulas,1781,Direção,Alta,1.5
+Fiat,Argo,2020,Consumo elevado de combustível,Problema na embreagem,Troca da embreagem,1172,Motor,Alta,2.9
+Toyota,Corolla,2020,Ar condicionado não refrigera,Falha no sistema hidráulico,Troca dos discos e pastilhas de freio,303,Combustível,Baixa,1.9
+Ford,Fiesta,2022,Luz de injeção acesa,Sonda lambda com falhas,Substituição da sonda lambda,986,Freios,Média,3.7
+Honda,Fit,2015,Consumo elevado de combustível,Sensor ABS defeituoso,Troca da embreagem,1119,Direção,Média,3.5
+Volkswagen,Polo,2021,Luz de injeção acesa,Correia de direção desgastada,Limpeza e troca do filtro,1193,Elétrico,Média,1.4
+Chevrolet,Onix,2023,Motor fazendo ruído metálico,Filtro de combustível entupido,Troca da embreagem,527,Direção,Alta,3.8
+Chevrolet,Onix,2018,Ruído ao virar o volante,Defeito no módulo de direção,Reprogramação do módulo de direção,1863,Transmissão,Alta,2.5
+Chevrolet,Cruze,2018,Motor fazendo ruído metálico,Defeito no módulo de direção,Troca da correia de direção,878,Freios,Média,2.8
+Ford,Ranger,2020,Dificuldade para engatar marchas,Sensor de oxigênio com defeito,Substituição das válvulas,1931,Transmissão,Baixa,4.0
+Chevrolet,Cruze,2018,Transmissão com falhas,Desgaste nas válvulas,Substituição da sonda lambda,787,Motor,Alta,3.2
+Toyota,Yaris,2020,Falha no sistema de direção elétrica,Sonda lambda com falhas,Troca do fluido hidráulico,811,Freios,Baixa,2.2
+Toyota,Hilux,2021,Vibração ao frear,Falta de gás refrigerante,Troca do sensor de oxigênio,1202,Transmissão,Média,2.3
+Chevrolet,Cruze,2017,Falha no sistema de direção elétrica,Defeito no módulo de direção,Substituição da bateria,376,Motor,Média,1.5
+Ford,Fiesta,2019,Transmissão com falhas,Desgaste nas válvulas,Substituição das válvulas,1748,Motor,Alta,2.4
+Chevrolet,S10,2020,Dificuldade para engatar marchas,Sonda lambda com falhas,Troca da correia de direção,1865,Direção,Alta,1.6
+Honda,Fit,2018,Luz do ABS acesa,Falta de gás refrigerante,Substituição da bateria,599,Motor,Alta,1.2
+Renault,Duster,2018,Motor fazendo ruído metálico,Bateria descarregada,Substituição das válvulas,625,Motor,Alta,2.2
+Ford,Ranger,2015,Luz do ABS acesa,Desgaste nas válvulas,Substituição das válvulas,881,Freios,Baixa,3.8
+Renault,Kwid,2023,Ruído ao virar o volante,Correia de direção desgastada,Troca da correia de direção,1354,Elétrico,Média,3.5
+Volkswagen,Golf,2018,Vibração ao frear,Falta de gás refrigerante,Substituição das válvulas,1684,Transmissão,Média,2.7
+Volkswagen,Jetta,2023,Consumo elevado de combustível,Problema na embreagem,Troca da embreagem,1335,Freios,Baixa,1.2
+Chevrolet,Cruze,2019,Transmissão com falhas,Correia de direção desgastada,Limpeza e troca do filtro,1560,Elétrico,Média,3.4
+Ford,Ranger,2023,Ruído ao virar o volante,Desgaste nos discos de freio,Substituição do sensor,1809,Elétrico,Média,1.0
+Renault,Kwid,2017,Luz do ABS acesa,Desgaste nos discos de freio,Substituição da bateria,1430,Elétrico,Média,4.0
+Renault,Captur,2018,Ruído ao virar o volante,Bateria descarregada,Recarga de gás refrigerante,1090,Elétrico,Média,2.6
+Honda,Fit,2017,Consumo elevado de combustível,Bateria descarregada,Reprogramação do módulo de direção,610,Transmissão,Média,1.8
+Renault,Kwid,2022,Ruído ao virar o volante,Falha no sistema hidráulico,Reprogramação do módulo de direção,1913,Transmissão,Baixa,1.7
+Toyota,Hilux,2018,Ruído ao virar o volante,Sensor de oxigênio com defeito,Substituição do sensor,663,Transmissão,Média,1.2
+Volkswagen,Golf,2019,Perda de potência em subidas,Desgaste nas válvulas,Substituição da bateria,644,Motor,Baixa,3.3
+Toyota,Corolla,2023,Transmissão com falhas,Sonda lambda com falhas,Troca do sensor de oxigênio,1581,Direção,Baixa,2.3
+Fiat,Toro,2016,Falha no sistema de direção elétrica,Falha no sistema hidráulico,Troca do sensor de oxigênio,1229,Elétrico,Baixa,4.0
+Fiat,Argo,2017,Vibração ao frear,Desgaste nas válvulas,Recarga de gás refrigerante,940,Direção,Alta,1.5
+Volkswagen,Golf,2022,Perda de potência em subidas,Desgaste nos discos de freio,Substituição das válvulas,529,Transmissão,Média,3.9
+Fiat,Mobi,2022,Ruído ao virar o volante,Falha no sistema hidráulico,Troca da correia de direção,1734,Motor,Alta,1.3
+Fiat,Argo,2022,Veículo demora a ligar,Problema na embreagem,Troca da correia de direção,1450,Combustível,Alta,1.4
+Honda,HR-V,2019,Transmissão com falhas,Defeito no módulo de direção,Troca da embreagem,615,Freios,Alta,3.3
+Renault,Duster,2015,Consumo elevado de combustível,Correia de direção desgastada,Limpeza e troca do filtro,613,Motor,Média,3.7
+Volkswagen,Jetta,2019,Motor fazendo ruído metálico,Bateria descarregada,Substituição da bateria,1711,Elétrico,Alta,3.4
+Fiat,Argo,2015,Perda de potência em subidas,Sensor de oxigênio com defeito,Limpeza e troca do filtro,1540,Freios,Baixa,1.2
+Toyota,Yaris,2015,Luz de injeção acesa,Problema na embreagem,Troca da correia de direção,356,Motor,Baixa,3.4
+Ford,Ranger,2017,Transmissão com falhas,Defeito no módulo de direção,Substituição da bateria,1622,Direção,Alta,2.1
+Toyota,Hilux,2018,Luz do ABS acesa,Filtro de combustível entupido,Troca da embreagem,353,Direção,Média,1.3
+Renault,Duster,2015,Transmissão com falhas,Problema na embreagem,Reprogramação do módulo de direção,1876,Direção,Média,3.0
+Ford,Focus,2022,Transmissão com falhas,Problema na embreagem,Troca da embreagem,745,Motor,Média,2.2
+Ford,Ranger,2021,Transmissão com falhas,Sensor ABS defeituoso,Troca do sensor de oxigênio,1263,Direção,Média,3.8
+Chevrolet,S10,2016,Perda de potência em subidas,Bateria descarregada,Substituição das válvulas,728,Direção,Média,1.0
+Toyota,Corolla,2018,Transmissão com falhas,Defeito no módulo de direção,Troca do fluido hidráulico,1994,Motor,Média,1.5
+Honda,Civic,2015,Luz de injeção acesa,Sonda lambda com falhas,Reprogramação do módulo de direção,1378,Combustível,Baixa,3.3
+Ford,Fiesta,2016,Falha no sistema de direção elétrica,Defeito no módulo de direção,Troca da embreagem,1837,Elétrico,Média,3.5
+Fiat,Toro,2023,Transmissão com falhas,Sonda lambda com falhas,Troca da correia de direção,1970,Direção,Média,1.4
+Toyota,Corolla,2019,Luz de injeção acesa,Defeito no módulo de direção,Substituição do sensor,730,Combustível,Alta,3.8
+Fiat,Mobi,2020,Perda de potência em subidas,Filtro de combustível entupido,Substituição do sensor,437,Transmissão,Alta,2.4
+Volkswagen,Golf,2022,Veículo demora a ligar,Correia de direção desgastada,Limpeza e troca do filtro,1555,Motor,Alta,1.9
+Ford,Fiesta,2022,Luz de injeção acesa,Correia de direção desgastada,Substituição da bateria,1277,Motor,Média,4.0
+Toyota,Hilux,2023,Luz de injeção acesa,Falta de gás refrigerante,Substituição do sensor,509,Combustível,Baixa,1.2
+Fiat,Argo,2015,Motor fazendo ruído metálico,Bateria descarregada,Troca da embreagem,734,Transmissão,Alta,3.6
+Toyota,Corolla,2018,Luz do ABS acesa,Desgaste nos discos de freio,Troca da correia de direção,756,Combustível,Baixa,1.1
+Chevrolet,S10,2021,Falha no sistema de direção elétrica,Sensor ABS defeituoso,Substituição das válvulas,974,Freios,Média,2.6
+Ford,Focus,2018,Dificuldade para engatar marchas,Falta de gás refrigerante,Troca do sensor de oxigênio,1215,Motor,Baixa,3.3
+Renault,Kwid,2016,Dificuldade para engatar marchas,Desgaste nas válvulas,Troca do sensor de oxigênio,1155,Direção,Média,3.6
+Ford,Fiesta,2020,Perda de potência em subidas,Filtro de combustível entupido,Substituição da sonda lambda,1960,Combustível,Baixa,2.6

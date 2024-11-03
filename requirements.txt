@@ -1,4 +1,5 @@
 Flask
-sentence-transformers
+gensim
 pandas
 nltk
+scikit-learn
