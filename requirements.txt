@@ -3,3 +3,5 @@ pandas
 requests
 numpy
 scikit-learn
+nltk
+gensim
