@@ -58,7 +58,7 @@ def diagnostic_route():
         return jsonify({'mensagem': 'Nenhum resultado encontrado.'}), 404
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
     
     
     
