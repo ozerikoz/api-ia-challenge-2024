@@ -26,10 +26,11 @@ def diagnostic(new_sample, train_problems_processed, train_df, model, modelo_usu
     similarities = cosine_similarity([new_sample_vector], train_vectors)[0]
 
     max_similarity_idx = np.argmax(similarities)
-    most_similar_problem = train_df.iloc[max_similarity_idx]  # Captura a linha inteira
+    most_similar_problem = train_df.iloc[max_similarity_idx].copy()  # Captura a linha inteira
 
-    # Retornar a linha inteira do DataFrame, sem modificações
-    most_similar_problem['Similaridade'] = round(similarities[max_similarity_idx], 2)  # Adiciona a similaridade
+    # Adiciona a similaridade à linha
+    most_similar_problem['Similaridade'] = similarities[max_similarity_idx]
+
 
     # Verificar se a similaridade é menor que 0.5
     if similarities[max_similarity_idx] < 0.5:

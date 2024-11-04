@@ -2,7 +2,7 @@ import requests
 import json
 
 def diagnostic(data):
-    url = 'http://127.0.0.1:5000/predict'
+    url = 'http://127.0.0.1:5000/diagnostic'
     headers = {'Content-type': 'application/json'}
     
     # Enviar a solicitação POST com os dados da nova amostra
