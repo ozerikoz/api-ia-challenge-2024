@@ -1,11 +1,6 @@
-from gensim.models import Word2Vec
+
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
-
-# Função para carregar o modelo Word2Vec
-def load_word2vec_model(model_path):
-    model = Word2Vec.load(model_path)
-    return model
 
 # Função para calcular o vetor médio de uma sentença
 def get_average_vector(model, processed_text):
@@ -23,7 +18,7 @@ def get_average_vector(model, processed_text):
     return average_vector
 
 # Função de teste
-def test_model_with_new_sample(new_sample, train_problems_processed, train_df, model, modelo_usuario=None, fabricante_usuario=None, ano_usuario=None):
+def diagnostic(new_sample, train_problems_processed, train_df, model, modelo_usuario=None, fabricante_usuario=None, ano_usuario=None):
     processed_sample = new_sample.lower()  # Pré-processar
     new_sample_vector = get_average_vector(model, processed_sample)
 
